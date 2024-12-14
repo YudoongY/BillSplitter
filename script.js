@@ -50,11 +50,11 @@ form.addEventListener('submit', (e) => {
 
     // 显示结果
     if (transactions.length === 0) {
-        resultDiv.innerHTML = '无需转账，已均摊完毕！';
+        resultDiv.innerHTML = 'All debts are settled!';
     } else {
         transactions.forEach(t => {
             const p = document.createElement('p');
-            p.textContent = `${t.from} 应付给 ${t.to} ${t.amount.toFixed(2)}元`;
+            p.textContent = `${t.from} Should pay ${t.to} ${t.amount.toFixed(2)}dollars`;
             resultDiv.appendChild(p);
         });
     }
