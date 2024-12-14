@@ -6,8 +6,14 @@
 <body>
     <h1>Bill Splitter</h1>
     <form id="splitForm">
-        <button type="button" onclick="addPerson()">Add people</button><br><br>
-        <input type="submit" value="Calculate" />
+        <div id="peopleContainer">
+            <div>
+                Name: <input type="text" name="name[]" required />
+                costs: <input type="number" name="expense[]" required />
+            </div>
+        </div>
+        <button type="button" onclick="addPerson()">添加参与者</button><br><br>
+        <input type="submit" value="计算" />
     </form>
 
     <h2>Spliting result</h2>
