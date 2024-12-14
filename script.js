@@ -4,7 +4,7 @@ const peopleContainer = document.getElementById('peopleContainer');
 // 添加参与者
 function addPerson() {
     const div = document.createElement('div');
-    div.innerHTML = `Name: <input type="text" name="name[]" required /> 花费: <input type="number" name="expense[]" required />`;
+    div.innerHTML = `Name: <input type="text" name="name[]" required /> costs: <input type="number" name="expense[]" required />`;
     peopleContainer.appendChild(div);
 }
 
